@@ -127,7 +127,8 @@ main {
 /* navbar */
 
 .bg-dark {
-  background-color: rgba(40, 40, 40, 0.84) !important;
+  background-color: rgba(255, 255, 255, 0.808) !important;
+  box-shadow: 0px 0px 5px 1px rgb(114, 113, 113);
 }
 
 .navbar-brand-img {
@@ -141,11 +142,15 @@ main {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #ffffff;
+  color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #4282d8;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #4282d8;
+  color: #d62316;
 }
 
 .navbar-dark .navbar-nav .active > .nav-link {
@@ -507,7 +512,6 @@ main {
 /* contact */
 
 .section-contact {
-  background: url(../images/contact-us-bg.jpg) rgb(217, 217, 218) center/cover;
   background-blend-mode: screen;
 }
 
@@ -778,7 +782,8 @@ select:-webkit-autofill {
 }
 
 .services-overlay {
-  background-color: rgba(100, 100, 100, 0.95);
+  background-color: rgba(173, 65, 65, 0.95);
+  background: linear-gradient(to right, rgba(206, 68, 68, 0.95),rgba(219, 47, 47, 0.95));
   position: fixed;
   display: flex;
   align-items: center;
@@ -788,9 +793,32 @@ select:-webkit-autofill {
   right: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 1040;
+  z-index: -1;
   padding: 7%;
-  display: none;
+  opacity: 0;
+}
+#svo1{
+  background-color: rgba(40, 89, 196, 0.95);
+  background: linear-gradient(to right, rgba(41, 111, 202, 0.95),rgba(20, 68, 202, 0.95));
+}
+#svo2{
+  background-color: rgba(189, 121, 58, 0.95);
+  background: linear-gradient(to right, rgba(209, 113, 49, 0.95),rgba(221, 71, 12, 0.95));
+}
+#svo3{
+  background-color: rgba(189, 121, 58, 0.95);
+  background: linear-gradient(to right, rgba(209, 49, 76, 0.95),rgba(214, 20, 78, 0.95));
+}
+#svo4{
+  background-color: rgba(189, 121, 58, 0.95);
+  background: linear-gradient(to right, rgba(33, 161, 76, 0.95),rgba(29, 184, 94, 0.95));
+}
+#svo5{
+  background-color: rgba(189, 121, 58, 0.95);
+  background: linear-gradient(to right, rgba(73, 49, 209, 0.95),rgba(71, 10, 212, 0.95));
+}
+#svo6{
+
 }
 .closeoverlay {
   position: absolute;
@@ -800,6 +828,12 @@ select:-webkit-autofill {
   top: 30px;
   transition: all 0.5s;
   cursor: pointer;
+}
+.services-overlay ul {
+  margin-left: 50px;
+}
+.services-overlay li {
+  list-style-type: square;
 }
 .closeoverlay:hover{
   transform: scale(1.5);
@@ -1017,3 +1051,7 @@ select:-webkit-autofill {
     width: 50%;
   }
 }
+
+
+
+
