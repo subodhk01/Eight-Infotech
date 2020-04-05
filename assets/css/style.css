@@ -816,6 +816,7 @@ select:-webkit-autofill {
 #svo5{
   background-color: rgba(189, 121, 58, 0.95);
   background: linear-gradient(to right, rgba(73, 49, 209, 0.95),rgba(71, 10, 212, 0.95));
+  background: linear-gradient(to right, #6edbcd,#52b6a8);
 }
 #svo6{
 
