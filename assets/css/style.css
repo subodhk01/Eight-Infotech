@@ -623,6 +623,9 @@ select:-webkit-autofill {
 .footer-logo {
   max-height: 48px;
 }
+.contact-logo {
+  max-height: 100px;
+}
 
 .copyright-text {
   text-align: center;
