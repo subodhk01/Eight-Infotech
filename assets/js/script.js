@@ -9,7 +9,8 @@ $(function () {
       // grecaptcha.reset();
       // }
       // }
-
+      var v = document.getElementById("mainvideo");
+      v.playbackRate = 0.8;
 
       $('.form-default .form-control').blur(function () {
             if (this.value) {
