@@ -141,8 +141,9 @@ main {
 }
 
 .navbar-brand-img {
-  height: 36px;
+    height: 36px;
     transform: scale(1.5);
+    margin-left: 20px;
 }
 
 .nav-link {
@@ -834,6 +835,7 @@ select:-webkit-autofill {
 
 }
 .closeoverlay {
+  z-index: 10;
   position: absolute;
   font-size: 54px;
   color: white;
@@ -853,6 +855,16 @@ select:-webkit-autofill {
 }
 .services-overlay-inner{
   margin: auto;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 500px){
+  .section-description {
+    font-size: 0.775rem !important;
+  }
+}
+.services-overlay-inner>div>img {
+  width: 60% !important;
 }
 .services-overlay-inner div {
   padding: 10px;
@@ -1012,7 +1024,11 @@ select:-webkit-autofill {
 @media (max-width: 372px) {
   .section-title,
   .page-title {
-    font-size: 1.875rem;
+    font-size: 1.175rem;
+  }
+
+  .section-description {
+    line-height: 1.2;
   }
 
   .section-intro {
@@ -1036,7 +1052,7 @@ select:-webkit-autofill {
 @media (max-width: 350px) {
   .section-title,
   .page-title {
-    font-size: 1.6875rem;
+    font-size: 1.0875rem;
   }
 }
 
