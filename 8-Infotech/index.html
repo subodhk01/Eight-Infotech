@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Eight infotech</title>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top navigation">
+            <a class="navbar-brand" href="#"><img src="webpng.png" style="height: 65px;"></a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#technology">TECHNOLOGY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT US</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="home" class="container-fluid">
+            <h1 class="title">
+                Reimagine your Business with<br>
+                <strong id="t1">Eight Infotech</strong>
+            </h1>
+            <video autoplay muted loop id="myVideo">
+                <source src="bannerVideo.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div id="about" class="section-default">
+             <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title-wrap">
+                            <h1 class="section-title">WE ARE THE EIGHT INFOTECH</h1>
+                        </div>
+                        <br>
+                        <br>
+                        <p class="text-justify line-height">Eight Infotech is a team of young, expert and enthusiastic engineers. Providing different mobile, web and cloud services. We believe in smart work as a team collaborate with customer in congruous way to keep him/her update and deliver more then we asked. Eight infotech always work to keep our dream in mind, a dream to be on the top of the list and a dream to help you achieve yours. Every client is unique and we are here to turning their ideas into reality in a very fertile manner. We enjoy the finer detail of a project, considering every stage of its journey from underpinning to success.</p>
+                        <br>
+                        <div class="row">
+                        <div class="image col-3" style="float: left;">
+                            <img src="infinity.gif" alt="infinty loop" class="image-content">
+                        </div>
+                        <div class="col-9">
+                            <p class="text-justify  line-height">We have experts for various domain and also have experties in every aspect of software development lifecycle to ensure the qualtiy and timely delivery of work. we understand your bussiness need and transfer it digitally. We stand out because we work incessantly to make things happen and deliver success. We believe that the ability to deliver more human-like and intuitive experiences, at every touch-point, for every customer, is the single most strategic investment for the modern enterprise. You may be at nascent stages or advanced stages in your digital journey, but regardless we can be your trusted partner in realizing your transformation objectives.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+          </div>
+          <div id="services" class="section-default">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title-wrap">
+                            <h1 class="section-title">OUR SERVICES</h1>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="card-columns ">
+                            <div class="card" onclick="on('ol1')">
+                                <div class="card-body flex-wrap">
+                                    <img class="card-logo" src="web-programming.png">
+                                    <p class="card-text">WEB application development</p>
+                                </div>
+                            </div>
+                            <div class="card " onclick="on('ol2')">
+                                <div class="card-body flex-wrap">
+                                    <img src="mobile-app.png" class="card-logo">
+                                  <p class="card-text">mobile application development</p>
+                                </div>
+                            </div>
+                            <div class="card "onclick="on('ol3')">
+                                <div class="card-body flex-wrap">
+                                    <img class="card-logo" src="digital-strategy.svg">
+                                  <p class="card-text">desktop based application</p>
+                                </div>
+                            </div>
+                            <div class="card " onclick="on('ol4')">
+                                <div class="card-body flex-wrap">
+                                    <img class="card-logo" src="cloud-computing.png">
+                                  <p class="card-text">cloud based application</p>
+                                </div>
+                            </div>
+                            <div class="card "onclick="on('ol5')">
+                                <div class="card-body flex-wrap">
+                                    <img class="card-logo" src="digital-strategy (2).svg">
+                                  <p class="card-text">devops and ci/cd</p>
+                                </div>
+                            </div>
+                            <div class="card "onclick="on('ol6')">
+                                <div class="card-body flex-wrap">
+                                    <img class="card-logo" src="big-data.png">
+                                  <p class="card-text">big data development</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="overlay" id="ol1">
+                        
+                            <div type="button" class="close" onclick="off('ol1')">
+                                x
+                            </div>
+                            <div class="row container overlay-container">
+                                <div class="col-md-6">
+                                    <img src="web2.png" class="overlay-image">
+                                </div>
+                                <div class="col-md-6 overlay-text">
+                                    <div class="overlay-title-wrap">
+                                        <h1 class="overlay-title">WEB APPLICATION DEVELOPMENT</h1>
+                                    </div>
+                                    <br>
+                                    <br>
+                                      <p class="text-justify ">Our leading web development team helps us to deliver high quality software at affordable cost. We provide development in a leading web development technology. A good website is a gateway to attract more customers, more prospects and more success. Eight infotech always focus on how we will attain the targets laid out with the maximum efficient and user friendly manner. Web application development consists of many stages,from high degree approach, precise planning, necessary research, design, accurate layout, and testing. Through this process we remain clear and transparent with our client without any misleading promises. We always assure our client that our web applications are ready from Day 1.</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="overlay" id="ol2">
+                            <div type="button" class="close" onclick="off('ol2')">
+                                x
+                            </div>
+                                <div class="row container overlay-container">
+                                    <div class="col-md-6">
+                                        <img src="mobile.png" class="overlay-image">
+                                    </div>
+                                    <div class="col-md-6 overlay-text">
+                                        <div class="overlay-title-wrap">
+                                            <h1 class="overlay-title ">MOBILE APPLICATION DEVELOPMENT</h1>
+                                        </div>
+                                        <br>
+                                        <br>
+                                          <p class="text-justify ">Our professional mobile development team helps us to deliver finest mobile application.We realize what it takes to transform your vision into reality. Having worked on several initiatives, we apprehend every app project is different and needs remarkable attention. For this reason, we spend significant time in planning and studies. Our designer and engineers believe that your idea should be sketched in a creative way for that we corroborate the design of mobile application is unique, user friendly, and express your idea in a better way. Our team always ensures that our client should get the best platform to turn their ideas into reality for that we provide a large number of technology in mobile development platforms whether it is iOS or Android.</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="overlay" id="ol3">
+                            <div type="button" class="close" onclick="off('ol3')">
+                                x
+                            </div>
+                                    <div class="row container overlay-container">
+                                        <div class="col-md-6">
+                                            <img src="desktop.png" class="overlay-image">
+                                        </div>
+                                        <div class="col-md-6 overlay-text">
+                                            <div class="overlay-title-wrap">
+                                                <h1 class="overlay-title">DESKTOP BASED APPLICATION</h1>
+                                            </div>
+                                            <br>
+                                            <br>
+                                              <p class="text-justify ">Desktop based application is a development of stand alone applications for laptop and desktops. Our team of experts develop rich, effective and user friendly desktop based applications facilitating easy to use and easy to access desktop applications for your business needs and business growth. As we believe in client’s growth we develop superior in performance, faster, and more secure than other applications. Your dream is to take your business as high as the sky and our dream is to fulfill your dream. Eight Infotech always believes in customer growth for that we provide a large number of desktop based application technologies.</p>
+                                        </div>
+                                    </div>
+                        </div>
+                                <div class="overlay" id="ol4">
+                                    <div type="button" class="close" onclick="off('ol4')">
+                                        x
+                                    </div>
+                                        <div class="row container overlay-container">
+                                            <div class="col-md-6">
+                                                <img src="cloud.png" class="overlay-image">
+                                            </div>
+                                            <div class="col-md-6 overlay-text">
+                                                <div class="overlay-title-wrap">
+                                                    <h1 class="overlay-title">CLOUD BASED APPLICATION</h1>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                  <p class="text-justify ">With growing business demand businesses are increasingly looking to free up the IT infrastructure. Cloud provides high available, high maintainable and scalable application.We have cloud experts which will never let you down and with cloud forget about the downtime of your application as it scales as traffic. We make business transformation easy. For assessment and planning to migrate your business process, we work with you to make cloud applications secure and faster.Cloud Provide:</p>
+                                                  <ul style="text-align: left;">
+                                                    <li>Scalability</li>
+                                                    <li>Flexibility</li>
+                                                    <li>Efficiency</li>
+                                                    <li>Data Security</li>
+                                                    <li>Work from anywhere</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="overlay" id="ol5">
+                                        <div type="button" class="close" onclick="off('ol5')">
+                                            x
+                                        </div>
+                                            <div class="row container overlay-container">
+                                                <div class="col-md-6">
+                                                    <img src="devops.png" class="overlay-image">
+                                                </div>
+                                                <div class="col-md-6 overlay-text">
+                                                    <div class="overlay-title-wrap">
+                                                        <h1 class="overlay-title">DevOps and CI/CD</h1>
+                                                    </div>
+                                                    <br>
+                                                    <br>
+                                                      <p class="text-justify ">CI/CD introduces ongoing automation and continuous monitoring throughout the lifecycle of apps, from integration and testing phases to delivery and deployment. We have highly skilled DevOps engineers to develop and automate the deployment process as code gets committed. Eight Infotech provides value driven DevOps services and solutions to our customers by leveraging its offering in digital, product engineering, and mobile application development services. We have adopted best in class DevOps practices and processes to enable an Agile team to move faster, produce better quality code, and deliver value to our client.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                        <div class="overlay" id="ol6">
+                                            <div type="button" class="close" onclick="off('ol6')">
+                                                x
+                                            </div>
+                                                <div class="row container overlay-container">
+                                                    <div class="col-md-6">
+                                                        <img src="big_data.png" class="overlay-image">
+                                                    </div>
+                                                    <div class="col-md-6 overlay-text">
+                                                        <div class="overlay-title-wrap">
+                                                            <h1 class="overlay-title">BIG DATA DEVELOPMENT</h1>
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                          <p class="text-justify ">zNowadays the business have an easy access to data with the exponential growth of emerging digital big data offering technologies.Whether you are looking to integrate your data into analytics-ready system or build a scalable big data solution from scratch, our seasoned team of big data engineers will help you maximize the return on your investment. As we know to survive in today’s competitive marketplace, successful organisations are leveraging data to make better business decisions. At Eight Infotech we employ the latest technologies to help you become a data driven organisation.</p>
+                                                    </div>
+                                                </div>
+                                         </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div id="technology" class="section-default">
+            <div class="container">
+                <div class="row">
+                    <div class="col section-title-wrap">
+                        <h1 class="section-title">OUR SERVICES</h1>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col ">
+                        <div class="company-logo">
+                            <img src="java.jpg" class="company-logo-img">
+                            <p class="company-name">Java</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="spring.png" class="company-logo-img">
+                            <p class="company-name">Spring</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="spring-boot.png" class="company-logo-img">
+                            <p class="company-name">Spring-Boot</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="spring-security.png" class="company-logo-img">
+                            <p class="company-name">Spring-Security</p>
+                        </div><div class="company-logo">
+                            <img src="jsp.jpg" class="company-logo-img">
+                            <p>JSP</p>
+                        </div><div class="company-logo">
+                            <img src="hibernate.png" class="company-logo-img">
+                            <p>Hibernate</p>
+                        </div><div class="company-logo">
+                            <img src="postgresql.png" class="company-logo-img">
+                            <p class="company-name">PostgreSQL</p>
+                        </div><div class="company-logo">
+                            <img src="mysql.png" class="company-logo-img">
+                            <p class="company-name">MySQL</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="php.png" class="company-logo-img">
+                            <p class="company-name">PHP</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="mongodb.png" class="company-logo-img">
+                            <p class="company-name">MongoDB</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="documentdb.jpg" class="company-logo-img">
+                            <p class="company-name">DocumentDB</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="python.png" class="company-logo-img">
+                            <p class="company-name">Python</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="django.jpg" class="company-logo-img">
+                            <p class="company-name">Django</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="flask.png" class="company-logo-img">
+                            <p class="company-name">Flask</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="drf.png" class="company-logo-img">
+                            <p class="company-name">DRF</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="swift.png" class="company-logo-img">
+                            <p class="company-name">Swift</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="html.png" class="company-logo-img">
+                            <p class="company-name">HTML</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="css.png" class="company-logo-img">
+                            <p class="company-name">CSS</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="javascript.png" class="company-logo-img">
+                            <p class="company-name">JavaScript</p>
+                        </div>
+                        <div class="company-logo">
+                            <img src="jquery.jpg" class="company-logo-img">
+                            <p class="company-name">JQuery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div id="technology" class="section-default tech-2">
+              <div class="row">
+                  <div class="col-lg-6">
+                    <div class="overlay-title-wrap" style="color:white">
+                        <h1 class="overlay-title">Your Technology Partner</h1>
+                    </div>
+                    <br>
+                    <br>
+                    <h4 class="talent-gap-typographic">
+                        <span class="digits">
+                            50%
+                        </span>
+                        <span class="text">
+                            of companies have lack of technical skills aftereffect clients get many problems to reach their dreams.
+                        </span>
+                    </h4>
+                    <br>
+                    <br>
+                    <p class="text-2">
+                    Eight infotech always assure you that our technology experts will always give you the <strong>best products</strong>. That will help you to reach at the top in the list as well as us.
+                    <br>
+                    <br>
+                    We will always be your trusted adviser and partner in terms of technology.
+                    </p>
+                  </div>
+                  <div class="col-lg-6 tech-2-3"></div>
+              </div>
+          </div>
+            
+<!------ Include the above in your HEAD tag ---------->
+
+  <!-- Contact Us Section -->
+    <section  id="contact" class="Material-contact-section section-padding section-dark">
+      <div class="container">
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                <h1 class="section-title">CONTACT US</h1>
+              </div>
+              <br>
+              <br>
+          </div>
+          <div class="row">
+              <!-- Section Titile -->
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <img src="webpng.png" id="img2"></a>
+                <h4>YOUR TECHNOLOGY PARTNER</h4>
+                <br>
+                <br>
+                <div class="find-widget">
+                 Address: <a href="#">9-B Vaishali Nagar,
+                    Annapurna Road,
+                    Indore - 452012</a>
+                </div>
+                <div class="find-widget">
+                  Phone:  <a href="#">+917355929950</a>
+                </div>
+                <div class="find-widget">
+                    Sales enquiries:  <a href="#">sales@eightinfotech.com</a>
+                  </div>
+                  <div class="find-widget">
+                    Other enquiries:  <a href="#">other@eightinfotech.com</a>
+                  </div>
+                  <div class="find-widget">
+                    Job enquiries:  <a href="#">hr@eightinfotech.com</a>
+                  </div> 
+                
+              </div>
+              <!-- contact form -->
+              <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                  <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                      <!-- Name -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" placeholder="Name*" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- email -->
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" placeholder="Email*"  required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Subject -->
+                      <div class="form-group label-floating">
+                        <label class="control-label">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" placeholder="Subject*"  required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Message -->
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label">Message</label>
+                          <textarea class="form-control" rows="3" id="message" name="message" placeholder="Message*" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- Form Submit -->
+                      <div class="form-submit mt-5">
+                          <button style="background-color: #4282d8; color: white;" class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+        <script src="main.js"></script> 
+    </body>
+</html>
