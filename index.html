@@ -561,27 +561,37 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-7 col-lg-8">
-                        <form class="row form-default" id="contactForm" action="https://script.google.com/macros/s/AKfycby56mWsIAA5GzQR6zYmakOMiKTD8tOv0YJMhSYr3AS4wcZFAF_5/exec" method="post">
-                            <div class="col-12 col-lg-6 form-group">
-                                <input type="text" class="form-control form-control-lg" id="first-name" name="first-name" placeholder="First Name" required>
+                        <form class="shake" role="form" action="https://script.google.com/macros/s/AKfycby56mWsIAA5GzQR6zYmakOMiKTD8tOv0YJMhSYr3AS4wcZFAF_5/exec" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                            <!-- Name -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="name">Name</label>
+                              <input class="form-control" id="name" type="text" name="name" placeholder="Name*" required data-error="Please enter your name">
+                              <div class="help-block with-errors"></div>
                             </div>
-                            <div class="col-12 col-lg-6 form-group">
-                                <input type="text" class="form-control form-control-lg" id="last-name" name="last-name" placeholder="Last Name" required>
+                            <!-- email -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="email">Email</label>
+                              <input class="form-control" id="email" type="email" name="email" placeholder="Email*"  required data-error="Please enter your Email">
+                              <div class="help-block with-errors"></div>
                             </div>
-                            <div class="col-12 col-lg-6 form-group">
-                                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Email" required>
+                            <!-- Subject -->
+                            <div class="form-group label-floating">
+                              <label class="control-label">Subject</label>
+                              <input class="form-control" id="msg_subject" type="text" name="subject" placeholder="Subject*"  required data-error="Please enter your message subject">
+                              <div class="help-block with-errors"></div>
                             </div>
-                            <div class="col-12 col-lg-6 form-group">
-                                <input type="text" class="form-control form-control-lg" id="subject" name="subject" placeholder="Subject" required>
-                            </div>
-                            <div class="col-12 form-group">
-                                <textarea rows="4" type="text" class="form-control form-control-lg" id="message" name="message" placeholder="Message" required></textarea>
+                            <!-- Message -->
+                            <div class="form-group label-floating">
+                                <label for="message" class="control-label">Message</label>
+                                <textarea class="form-control" rows="3" id="message" name="message" placeholder="Message*" required data-error="Write your message"></textarea>
+                                <div class="help-block with-errors"></div>
                             </div>
                             <div class="g-recaptcha" data-sitekey="6LdnBucUAAAAAKKW2Ry28AIAWTqJrv5_1KZWoK6B"></div>
-                            <div class="col-12 button-wrap text-right">
-                                <button type="submit" class="btn btn-primary btn-lg btn-submit">
-                                    Send Message
-                                </button>
+                            <!-- Form Submit -->
+                            <div class="form-submit mt-5">
+                                <button class="btn btn-primary btn-lg btn-submit" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                <div class="clearfix"></div>
                             </div>
                         </form>
                         <div id="contactForm-confirmation" class="contactForm-confirmation">
@@ -593,7 +603,7 @@
                         <div class="address-panel">
                             <ul class="address-list">
                                 <li style="text-align: center;">
-                                    <img class="contact-logo" src="assets/images/webpng.png" alt="logo">
+                                  <a href="#"><img class="contact-logo" src="assets/images/webpng.png" alt="logo"></a>
                                     <address><h4>Your Technology Partner</h4></address>
                                 </li>
                                 <li>
@@ -622,7 +632,7 @@
         <div class="container footer-inner-wrap">
             <div class="row align-items-center">
                 <div class="col-auto footer-logo-wrap">
-                    <img class="footer-logo" src="assets/images/webpng.png" alt="logo">
+                 <a href="#"><img class="footer-logo" src="assets/images/webpng.png" alt="logo"></a>
                 </div>
                 <div class="col copyright-text-wrap">
                     <p class="copyright-text">© Copyright 2020 Eight InfoTech All Rights Reserved.</p>
