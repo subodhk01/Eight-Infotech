@@ -85,5 +85,21 @@ $(function () {
 
       
 });
-
-
+$(document).ready(function(){
+$("#submit").click(function(){
+var dataString = 'first-name'+ first-name + '&last-name='+ last-name + '&email'+ email + '&subject='+ subject + '&message=' + message;
+// AJAX Code To Submit Form.
+$.ajax({
+type: "POST",
+url: "ajaxsubmit.php",
+data: dataString,
+cache: false,
+success: function(){
+var x = document.getElementById("snackbar");
+x.className = "show";
+setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+});
+return false;
+});
+});

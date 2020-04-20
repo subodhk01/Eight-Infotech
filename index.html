@@ -15,6 +15,7 @@
 
     <title>Eight-InfoTech</title>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
@@ -579,7 +580,7 @@
                             </div>
                             <div class="g-recaptcha" data-sitekey="6LdnBucUAAAAAKKW2Ry28AIAWTqJrv5_1KZWoK6B"></div>
                             <div class="col-12 button-wrap text-right">
-                                <button type="submit" class="btn btn-primary btn-lg btn-submit">
+                                <button type="submit" class="btn btn-primary btn-lg btn-submit" id="submit_form">
                                     Send Message
                                 </button>
                             </div>
@@ -646,6 +647,8 @@
             </div>
         </div>
     </footer>
+	
+	<div style="display:none" class="snackbar">Thank you for your interest we will get back to you soon.</div>
     <script>
     window.verifyRecaptchaCallback = function (response) {
         $('input[data-recaptcha]').val(response).trigger('change')
@@ -656,6 +659,7 @@
         });
     </script>
     <script>
+
         function sv1(){
             $('#svo1').attr('style',"z-index:1040;");
             $('#svo1').animate({

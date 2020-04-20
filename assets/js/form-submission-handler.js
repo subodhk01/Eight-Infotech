@@ -74,7 +74,10 @@
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
-          var thankYouMessage = form.querySelector(".thankyou_message");
+		  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+          var thankYouMessage = form.querySelector(".snackbar");
           if (thankYouMessage) {
             thankYouMessage.style.display = "block";
           }
