@@ -86,12 +86,12 @@ $(function () {
       
 });
 $(document).ready(function(){
-$("#submit").click(function(){
+$("#submit_form").click(function(){
 var dataString = 'first-name'+ first-name + '&last-name='+ last-name + '&email'+ email + '&subject='+ subject + '&message=' + message;
 // AJAX Code To Submit Form.
 $.ajax({
 type: "POST",
-url: "ajaxsubmit.php",
+url: "sendmail.php",
 data: dataString,
 cache: false,
 success: function(){
