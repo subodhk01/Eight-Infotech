@@ -774,21 +774,6 @@ select:-webkit-autofill {
   right: 0;
 }
 
-
-.contactForm-confirmation {
-  display: none;
-  position: absolute;
-  left: 15px;
-  bottom: 0;
-  padding: 10px;
-  background: #4282d7;
-  border-radius: 6px;
-}
-
-.contactForm-confirmation * {
-  color: #ffffff;
-}
-
 .services-cards-container {
   text-align: center;
   padding: 10px 30px;

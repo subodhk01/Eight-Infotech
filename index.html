@@ -562,7 +562,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-7 col-lg-8">
-                        <form class="row form-default" id="contactForm" action="" method="post">
+                        <form class="row form-default" id="contactForm" method="post" onsubmit="handleSubmit(event)">
                             <div class="col-12 col-lg-6 form-group">
                                 <input type="text" class="form-control form-control-lg" id="first-name" name="first-name" placeholder="First Name" required>
                             </div>
@@ -585,9 +585,11 @@
                                 </button>
                             </div>
                         </form>
-                        <div id="contactForm-confirmation" class="contactForm-confirmation">
-                            <h5>Thank You</h5>
-                            <p>We'll get back to you shortly.</p>
+                        <div id="form-success" style="display: none;">
+                            <p class="text-success">Thank you for contacting us, We'll get back to you shortly</p>
+                        </div>
+                        <div id="form-error" style="display: none;">
+                            <p class="text-success">Unable to process your request, please try again</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4">
@@ -647,8 +649,36 @@
             </div>
         </div>
     </footer>
-	
-	<div style="display:none" class="snackbar">Thank you for your interest we will get back to you soon.</div>
+    <script>
+        function handleSubmit(event){
+            $("#form-success").hide();
+            $("#form-error").hide();
+            event.preventDefault();
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycby56mWsIAA5GzQR6zYmakOMiKTD8tOv0YJMhSYr3AS4wcZFAF_5/exec",
+                type: "POST",
+                data: {
+                    name: document.getElementById("first-name").value + " " + document.getElementById("last-name").value,
+                    email: document.getElementById("email").value,
+                    subject: document.getElementById("subject").value,
+                    message: document.getElementById("message").value
+                },
+                success: function () {
+                    console.log("success");
+                    $("#form-success").show();
+                    document.getElementById("first-name").value = "";
+                    document.getElementById("last-name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                    document.getElementById("subject").value = "";
+                },
+                error: function (error) {
+                    console.log(error)
+                    $("#form-error").hide();
+                }
+            })
+        }
+    </script>
     <script>
     window.verifyRecaptchaCallback = function (response) {
         $('input[data-recaptcha]').val(response).trigger('change')
